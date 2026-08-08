@@ -11,23 +11,26 @@ import { Market } from "@/components/market";
 import { Pricing } from "@/components/pricing";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
+import { RegionProvider } from "@/components/region-context";
 
 export default function Home() {
   return (
-    <main className="relative">
-      <Nav />
-      <FuseProgress />
-      <Hero />
-      <LiveTicker />
-      <Problem />
-      <Features />
-      <HowItWorks />
-      <Safety />
-      <Metrics />
-      <Market />
-      <Pricing />
-      <CTA />
-      <Footer />
-    </main>
+    <RegionProvider>
+      <main className="relative">
+        <Nav />
+        <FuseProgress />
+        <Hero />
+        <LiveTicker />
+        <Problem />
+        <Features />
+        <HowItWorks />
+        <Safety />
+        <Metrics />
+        <Market />
+        <Pricing />
+        <CTA />
+        <Footer />
+      </main>
+    </RegionProvider>
   );
 }
