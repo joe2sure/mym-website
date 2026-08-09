@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { pricingPlans } from "@/lib/mock-data";
 import { useRegion } from "@/components/region-context";
-import { RegionSelector } from "@/components/region-selector";
+import { RegionSelector } from "../components/region-selector";
 
 export function Pricing() {
   const { region } = useRegion();
